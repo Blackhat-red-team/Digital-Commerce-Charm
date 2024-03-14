@@ -639,43 +639,7 @@ body {
 
 }
 
-.newsletter {
-    background: url(images/newsletter.webp) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.newsletter form {
-    max-width: 45rem;
-    margin-left: auto;
-    text-align: center;
-    padding: 5rem 0;
 
-}
-
-.newsletter form h3 {
-    font-size: 2.2rem;
-    color: #fff;
-    padding-bottom: .7rem;
-    font-weight: normal;
-}
-.newsletter form .box {
-    width: 100%;
-    margin: .7rem 0;
-    padding: 1rem 1.2rem;
-    font-size: 1.6rem;
-    color: var(--black);
-    border-radius: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
-    text-transform: none;
-}
-.newsletter form.box:hover {
-    background: var(--black);
-    color: #fff;
-}
 
 .arrivals .arrivals-slider .box {
     display: flex;
@@ -691,7 +655,7 @@ body {
 }
 
 .arrivals .arrivals-slider .box .image img {
-    height: 15rem;
+    height: 25rem;
 }
 .arrivals .arrivals-slider .box .content h3 {
     font-size: 2rem;
@@ -722,13 +686,13 @@ body {
 
 }
 .deal .content {
-    flex: 1 1 42rem;
+    flex: 1 1 32rem;
 }
 .deal .image {
-    flex: 1 1 42rem;
+    flex: 1 1 32rem;
 }
 .deal .image img {
-    width: 100%;
+    width: 50%;
 
 }
 .deal .content h3 {
