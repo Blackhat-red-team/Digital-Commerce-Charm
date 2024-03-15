@@ -255,3 +255,36 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    // Array of image URLs
+    var images = [
+        "images/best1.jpg",
+        "images/best2.jpg",
+        "images/best3.jpg",
+        "images/best6.jpg",
+        "images/best5.jpg",
+        "images/best7.jpg",
+        "images/apple-iphone-14-pro-max-3.jpg",
+        "images/3.jpg",
+        "images/8.jpg",
+        "images/2.jpg",
+        "images/1.jpg"
+    ];
+
+    var productCards = document.querySelectorAll('.products .product-card');
+
+    // Function to change the image of each product card
+    function changeImages() {
+        productCards.forEach(function (card, index) {
+            var img = card.querySelector('.product-img-container img');
+            img.src = images[index % images.length]; // Ensure the image index loops back to the start when reaching the end
+        });
+    }
+
+    // Call the function initially
+    changeImages();
+
+    // You can call the changeImages function periodically if you want images to change automatically
+    setInterval(changeImages, 3000); // Change image every 3 seconds (for example)
+});
+
