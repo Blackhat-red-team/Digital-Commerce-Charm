@@ -217,3 +217,41 @@ for (const item of scrollContainer) {
         }
     });
 }
+document.addEventListener('DOMContentLoaded', function () {
+    var mySwiper = new Swiper('.arrivals-slider', {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+            },
+            1024: {
+                slidesPerView: 2,
+            }
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    var mySwiper = new Swiper('.arrivals-slider', {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+            },
+            1024: {
+                slidesPerView: 2,
+            }
+        }
+    });
+});
